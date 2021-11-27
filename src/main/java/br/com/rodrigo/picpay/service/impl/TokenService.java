@@ -1,9 +1,9 @@
 package br.com.rodrigo.picpay.service.impl;
 
 import br.com.rodrigo.picpay.model.Usuario;
-import com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithm;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Service;
