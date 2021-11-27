@@ -1,8 +1,12 @@
 package br.com.rodrigo.picpay.service.impl;
 
+import br.com.rodrigo.picpay.conversor.TransacaoConversor;
 import br.com.rodrigo.picpay.dto.TransacaoDTO;
 import br.com.rodrigo.picpay.model.Transacao;
+import br.com.rodrigo.picpay.repository.TransacaoRepository;
+import br.com.rodrigo.picpay.service.ICartaoCreditoService;
 import br.com.rodrigo.picpay.service.ITransacaoService;
+import br.com.rodrigo.picpay.service.IUsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

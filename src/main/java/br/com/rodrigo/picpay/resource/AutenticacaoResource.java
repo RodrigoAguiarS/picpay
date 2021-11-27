@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.rodrigo.picpay.dto.LoginDTO;
 import br.com.rodrigo.picpay.dto.TokenDTO;
-import br.com.rodrigo.picpay.service.impl.TokenService;
+
 
 import javax.validation.Valid;
 

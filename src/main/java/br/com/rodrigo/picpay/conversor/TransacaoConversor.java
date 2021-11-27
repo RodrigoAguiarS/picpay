@@ -2,8 +2,7 @@ package br.com.rodrigo.picpay.conversor;
 
 import br.com.rodrigo.picpay.dto.TransacaoDTO;
 import br.com.rodrigo.picpay.model.Transacao;
-
-
+import br.com.rodrigo.picpay.service.IUsuarioService;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.PropertyMap;
 import org.springframework.beans.factory.annotation.Autowired;
