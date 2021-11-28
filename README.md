@@ -1,5 +1,5 @@
 # PicPay Clone
-API que simular funcionalidades do PicPay para mentoria de Spring Boot e Java
+API que simular funcionalidades do PicPay com Spring Boot e Java
 
 A API é baseada no modelo RestFULL e contém as seguintes tecnologias:
 - Spring Boot 2;
