@@ -31,7 +31,7 @@ public class SwaggerConfiguracao {
     }
 
     ApiInfo apiInfo() {
-        return new ApiInfoBuilder().title("PicPayClone API")
+        return new ApiInfoBuilder().title("picpay API")
                 .description("Estrutura de uma API RestFull com Spring Boot para simular funcionalidades do PicPay")
                 .version(versaoAplicacao).build();
     }
