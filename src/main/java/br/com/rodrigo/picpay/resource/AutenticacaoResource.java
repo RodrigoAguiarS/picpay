@@ -24,7 +24,7 @@ public class AutenticacaoResource extends ResourceBase<TokenDTO> {
     private AuthenticationManager authManager;
 
     @Autowired
-    private TokenService tokenService;
+    private  TokenService tokenService;
 
     @PostMapping
     public ResponseEntity<TokenDTO> autenticar(@RequestBody @Valid LoginDTO loginDTO) {

@@ -13,10 +13,10 @@ import java.util.Date;
 @Service
 public class TokenService {
 
-    @Value("${picpayclone.jwt.expiration}")
+    @Value("${picpay.jwt.expiration}")
     private String expiration;
 
-    @Value("${picpayclone.jwt.secret}")
+    @Value("${picpay.jwt.secret}")
     private String secret;
 
     public String gerarToken(Authentication authentication) {
@@ -24,7 +24,7 @@ public class TokenService {
         Date hoje = new Date();
         Date dataExpiracao = new Date(hoje.getTime() + Long.parseLong(expiration));
 
-        return Jwts.builder().setIssuer("API PicPay Clone").setSubject(logado.getId().toString())
+        return Jwts.builder().setIssuer("API PicPay").setSubject(logado.getId().toString())
                 .setIssuedAt(hoje).setExpiration(dataExpiracao).signWith(SignatureAlgorithm.HS256, secret).compact();
     }
 

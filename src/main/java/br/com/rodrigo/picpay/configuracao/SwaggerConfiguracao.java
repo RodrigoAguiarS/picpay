@@ -24,7 +24,7 @@ public class SwaggerConfiguracao {
     @Bean
     public Docket productApi() {
         return new Docket(DocumentationType.SWAGGER_2).select()
-                .apis(RequestHandlerSelectors.basePackage("br.com.dio.picpayclone")).paths(PathSelectors.any()).build()
+                .apis(RequestHandlerSelectors.basePackage("br.com.rodrigo.picpay")).paths(PathSelectors.any()).build()
                 .apiInfo(apiInfo()).useDefaultResponseMessages(false)
                 .securitySchemes(Arrays.asList(apiKey()));
 
